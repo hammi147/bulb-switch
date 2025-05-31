@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb On/Off</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 50px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #onBtn {
+      background-color: green;
+      color: white;
+    }
+
+    #offBtn {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bulb ON/OFF</h1>
+
+  <img id="bulb" src="bulb-off.jpg.webp" alt="Bulb">
+
+  <br>
+
+  <button id="onBtn" onclick="turnOn()">ON</button>
+  <button id="offBtn" onclick="turnOff()">OFF</button>
+
+  <script>
+    function turnOn() {
+      document.getElementById('bulb').src = 'bulb-on.jpg.webp';
+    }
+
+    function turnOff() {
+      document.getElementById('bulb').src = 'bulb-off.jpg.webp';
+    }
+  </script>
+
+</body>
+</html>
